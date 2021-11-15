@@ -1,3 +1,9 @@
+"""
+The matrix represents a complete weighted graph, where weights can be negative.
+Dijkstra does not work with negative values, but other algorithms, such as Floyd do.
+So we apply Floyd to find the shortest path between 1, 2, ... N different bunnies and keep the best one.
+"""
+
 import itertools
 
 def path_from_permutation(perm):

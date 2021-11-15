@@ -1,3 +1,9 @@
+"""
+Starting from the desidered number of bombs, M and F, we do a series of divisions.
+Divisions, in this case, should be considered a series of subtractions, as we keep the rest of the division as the term for the next cycle.
+If we reach 1, 1, it is possible to reach the given number of bombs, and we have just found the best solution, else it is impossible.
+"""
+
 def nsolution(m, f):
     g = 0
 

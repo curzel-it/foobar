@@ -1,3 +1,8 @@
+"""
+In order to solve in O(n) we need to traverse the list only once.
+We do so by keeping track of a window of values (two indeces) which we will move accordingly.
+"""
+
 def solution(l, t):
     start = 0
     end = start + 1

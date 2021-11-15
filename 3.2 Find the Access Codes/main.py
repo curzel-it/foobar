@@ -1,3 +1,9 @@
+"""
+We go through the list, and for each number we store all `previous divisors` and `successive multiples`.
+For each number y, we add n solutions, where in are the combinations (x,y,z), where x is a previous divisor and z a successive multiple.
+This means that, for each number, the number of combinations to add is the `number of divisors * number of multiples`.
+"""
+
 def solution(l):
     solutions = 0
 

@@ -1,3 +1,7 @@
+"""
+We find primes and add them to a string one by one, until the string is long enough to generate the required id.
+"""
+
 def solution(i):
     return primes_string(i+5)[i:i+5]
 

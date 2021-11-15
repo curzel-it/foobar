@@ -1,3 +1,12 @@
+"""
+Hard to explain without a drawing.
+In short, hitting the target by having the laser bounce of a wall is equivalent of shooting in straight line, with the same length, into a reflected room.
+This solution generates reflected rooms, in order, and for each checks if the target reflection can be shot without hitting any obstacle.
+Obstacle being the original target, original position, and all previous reflections of both.
+We do that by simply checking the shooting angle with atan2.
+Finally, there is a finite number of rooms to check, which can be calculated using the gun range and the room size.
+"""
+
 import math
 
 TOP = 1

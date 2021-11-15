@@ -1,7 +1,10 @@
-import time
-import pdb
+"""
+We recursively place bricks to form a new step of the stair case.
+When the number of bricks left is zero we store the combination.
+After each step, the max and min height of the next step can be calculated in order to reduce the number of possibilities.
+"""
+
 import math
-import sys
 
 stored_solutions_count = {}
 
